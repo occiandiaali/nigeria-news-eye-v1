@@ -16,9 +16,29 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+      title: 'About',
+      url: '/about',
+      icon: 'help-circle-outline'
+    },
+    {
+      title: 'Entertainment',
+      url: '/entertainment',
+      icon: 'logo-game-controller-b'
+    },
+    {
+      title: 'Business',
+      url: '/business',
+      icon: 'business'
+    },
+    {
+      title: 'Sports',
+      url: '/sports',
+      icon: 'basketball'
+    },
+    {
+      title: 'Technology',
+      url: '/technology',
+      icon: 'cog'
     }
   ];
 

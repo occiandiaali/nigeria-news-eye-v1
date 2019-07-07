@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="appbanner">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title id="title">About News Eye</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="appback" padding>
+    <ion-card class="appcard">
+        <ion-card-header>
+          <ion-card-subtitle>About News Eye</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <p>
+            Contact info here..
+          </p>
+          <ion-spinner *ngIf="!articles"  name="dots"></ion-spinner>
+        </ion-card-content>
+      </ion-card>
+</ion-content>

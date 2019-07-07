@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="appbanner">
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    <ion-title id="title">Business</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="appback" padding>
+    <ion-card class="appcard">
+        <ion-card-header>
+          <ion-card-subtitle>Eye on biz</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-spinner *ngIf="!articles"  name="dots"></ion-spinner>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

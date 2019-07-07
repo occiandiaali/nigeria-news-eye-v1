@@ -12,8 +12,24 @@ const routes: Routes = [
     loadChildren: './home/home.module#HomePageModule'
   },
   {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
+    path: 'about',
+    loadChildren: './about/about.module#AboutPageModule'
+  },
+  {
+    path: 'business',
+    loadChildren: './business/business.module#BusinessPageModule'
+  },
+  {
+    path: 'entertainment',
+    loadChildren: './entertainment/entertainment.module#EntertainmentPageModule'
+  },
+  {
+    path: 'sports',
+    loadChildren: './sports/sports.module#SportsPageModule'
+  },
+  {
+    path: 'technology',
+    loadChildren: './technology/technology.module#TechnologyPageModule'
   }
 ];
 

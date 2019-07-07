@@ -4,3 +4,31 @@
 // styles are for the entire app and not just one component. Additionally, this 
 // file can hold Sass mixins, functions, and placeholder classes to be imported 
 // and used throughout the application.
+.ion-color-appbanner {--ion-color-base: #06a079;}
+.ion-color-appback {--ion-color-base: #d5f7dd; }
+#title { 
+    --color: #fff;
+    font-size: 2em;
+    font-family: 'Bookman', 'Courier New', Courier, monospace;
+}
+#logo {
+    width: 15em;
+    height: 10em;
+    margin: 0 auto;
+}
+
+// ion-card{
+//   // --background: #021b46;
+//   --background: #044e14;
+//   --color: #fff;
+// }
+.subtitles {
+    color: rgb(75, 189, 9);
+}
+#copy-r {
+    text-align: center;
+}
+.appcard {
+    --background: #044e14;
+    --color: #fff;
+}
