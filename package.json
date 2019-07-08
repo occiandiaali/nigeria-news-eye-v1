@@ -1,7 +1,7 @@
 {
   "name": "news-eye-v1",
   "version": "0.0.1",
-  "author": "Ionic Framework",
+  "author": "OceanSemreh Diaali",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
@@ -19,6 +19,7 @@
     "@angular/http": "^7.2.2",
     "@angular/platform-browser": "^7.2.2",
     "@angular/platform-browser-dynamic": "^7.2.2",
+    "@angular/pwa": "^0.801.0",
     "@angular/router": "^7.2.2",
     "@ionic-native/core": "^5.0.0",
     "@ionic-native/splash-screen": "^5.0.0",
