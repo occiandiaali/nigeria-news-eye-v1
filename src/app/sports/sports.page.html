@@ -7,13 +7,22 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="appback" padding>
-    <ion-card class="appcard">
-        <ion-card-header>
-          <ion-card-subtitle>Eye on sports</ion-card-subtitle>
-        </ion-card-header>
-        <ion-card-content>
-          <ion-spinner *ngIf="!articles"  name="dots"></ion-spinner>
-        </ion-card-content>
-    </ion-card>
+<ion-content color="appback">
+  <ion-card *ngFor="let article of articles" class="appcard">
+    <ion-img src="{{article.urlToImage}}"></ion-img>
+   <ion-card-header>
+     <ion-title>{{article.title}}</ion-title>
+   </ion-card-header>
+   <ion-card-content>
+     <h2>
+       {{article.description}}
+     </h2>
+     <h5 *ngIf="article.author === null; else elseBlock" class="subtitles">Published by - Anonymous</h5>
+     <ng-template #elseBlock><h5 class="subtitles">Published by - {{article.author}}</h5></ng-template>
+     <p class="subtitles">{{article.publishedAt | date}}</p>
+     <ion-spinner *ngIf="!articles"  name="dots"></ion-spinner>
+     <ion-button color="success" ion-button fill="outline" href="{{article.url}}" target="_blank" large>Read full story</ion-button>
+
+   </ion-card-content>
+ </ion-card>
 </ion-content>

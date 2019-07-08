@@ -40,6 +40,12 @@ export class AppComponent {
       url: '/technology',
       icon: 'cog'
     }
+    ,
+    {
+      title: 'Health',
+      url: '/health',
+      icon: 'medkit'
+    }
   ];
 
   constructor(

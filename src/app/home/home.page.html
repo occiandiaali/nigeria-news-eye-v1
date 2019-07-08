@@ -4,7 +4,7 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title id="title">
-      Nigeria News Eye
+      News Eye
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -23,7 +23,7 @@
           <ng-template #elseBlock><h5 class="subtitles">Published by - {{article.author}}</h5></ng-template>
           <p class="subtitles">{{article.publishedAt | date}}</p>
           <ion-spinner *ngIf="!articles"  name="dots"></ion-spinner>
-          <ion-button color="success" ion-button fill="outline" href="{{article.url}}" target="_blank" large>Read full article</ion-button>
+          <ion-button color="success" ion-button fill="outline" href="{{article.url}}" target="_blank" large>Read full story</ion-button>
     
         </ion-card-content>
       </ion-card>

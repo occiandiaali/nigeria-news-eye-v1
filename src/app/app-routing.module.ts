@@ -30,7 +30,8 @@ const routes: Routes = [
   {
     path: 'technology',
     loadChildren: './technology/technology.module#TechnologyPageModule'
-  }
+  },
+  { path: 'health', loadChildren: './health/health.module#HealthPageModule' }
 ];
 
 @NgModule({
