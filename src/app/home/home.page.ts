@@ -13,8 +13,8 @@ export class HomePage {
   constructor(private apiService: ApiService) {}
 
   ionViewDidEnter() {
-    this.resourceCapture();
     setInterval(this.resourceCapture, 600000);
+    this.resourceCapture();
   }
 
   // get api data
